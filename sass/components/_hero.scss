@@ -1,0 +1,58 @@
+/* Оформление Баннера  */
+.banner {
+  padding-top: 200px;
+  padding-bottom: 200px;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  max-width: 1600px;
+  min-height: 600px;
+
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("../images/backgrounds/hero.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+/* заголовок баннера  */
+.banner__title {
+  margin: auto;
+
+  text-align: center;
+
+  width: 696px;
+
+  @include fonts($fw: 900, $fsz: 44px, $lh: 60px, $ls: 0.06em);
+
+  text-transform: uppercase;
+  color: white;
+}
+/* кнопка заказать на баннере  */
+.banner__button {
+  display: block;
+  transition: box-shadow $timeDelay $cubic, background-color $timeDelay $cubic;
+
+  height: 50px;
+
+  margin: 30px auto 0;
+  padding: 10px 32px;
+
+  font-family: $mainFont;
+  @include fonts($fw: bold, $fsz: 16px, $lh: 30px, $ls: 0.06em);
+
+  color: white;
+
+  background-color: $brandBlue;
+  border-radius: 4px;
+  border: transparent;
+
+  &:hover,
+  &:focus {
+    background-color: $blueButton;
+  }
+}

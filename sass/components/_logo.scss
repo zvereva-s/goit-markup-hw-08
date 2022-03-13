@@ -1,0 +1,18 @@
+.logo {
+  padding-top: 24px;
+  padding-bottom: 24px;
+
+  font-family: $logoFont;
+
+  @include fonts($fw: bold, $fsz: 26px, $lh: 31px);
+
+  color: $brandBlue;
+}
+.logo__header--dark {
+  color: black;
+}
+.footer__logo {
+  color: white;
+
+  padding: 0;
+}

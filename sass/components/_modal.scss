@@ -1,0 +1,211 @@
+/* Модальное окно */
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+
+  opacity: 1;
+  transition: opacity $timeDelay $cubic;
+
+  &.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+
+.backdrop.is-hidden .modal {
+  transform: translate(-50%, -50%) scale(0.9);
+}
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+
+  transition: transform $timeDelay $cubic;
+
+  width: 530px;
+  padding: 8px;
+  background-color: white;
+}
+.modal__button {
+  @include flex();
+  margin-left: auto;
+
+  padding: 8px;
+  width: 30px;
+  height: 30px;
+
+  background-color: white;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+}
+.modal__icon--close {
+  transition: fill $timeDelay $cubic;
+
+  width: 11px;
+  height: 11px;
+
+  fill: black;
+
+  .modal__button:hover &,
+  .modal__button:focus & {
+    fill: $brandBlue;
+  }
+}
+
+.modal__icon:hover,
+.modal__icon:focus {
+  fill: $brandBlue;
+}
+
+/* Оформление формы на модельном окне */
+
+.modal__form {
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-bottom: 32px;
+}
+.modal__field {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+
+  margin-bottom: 10px;
+}
+.modal__title {
+  margin-bottom: 12px;
+
+  width: 100%;
+
+  @include fonts($fw: bold, $fsz: 20px, $lh: 23px);
+
+  text-align: center;
+
+  color: $dark;
+}
+.modal__label {
+  @include fonts($fsz: 12px, $lh: 15px, $ls: 0.01em);
+
+  color: $txt-color;
+}
+.modal__input {
+  transition: border $timeDelay $cubic;
+
+  padding-left: 40px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  height: 40px;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+  outline: none;
+
+  @include fonts($fsz: 12px, $lh: 14px, $ls: 0.01em);
+
+  color: rgba(117, 117, 117, 0.5);
+  cursor: pointer;
+
+  &:hover {
+    border: 1px solid $brandBlue;
+  }
+}
+
+.modal__input--comment {
+  display: block;
+
+  resize: none;
+
+  padding-left: 16px;
+  margin-bottom: 0;
+  height: 120px;
+
+  color: $txt-color;
+}
+
+.modal__label--policy {
+  @include flex();
+
+  margin-top: 20px;
+
+  @include fonts($fsz: 14px, $lh: 24px);
+  color: $txt-color;
+}
+
+.modal__link {
+  display: inline-block;
+
+  color: $brandBlue;
+  text-decoration: underline;
+}
+
+.modal__icon--check {
+  transition: border $timeDelay $cubic, background-color $timeDelay $cubic,
+    background-image $timeDelay $cubic;
+
+  @include flex();
+
+  width: 16px;
+  height: 15px;
+
+  margin-right: 8px;
+
+  border: 2px solid $dark;
+  border-radius: 4px;
+}
+
+.modal__check:checked + .modal__icon--check {
+  border: transparent;
+  background-color: $brandBlue;
+  background-image: url("../images/icon-check.svg");
+  background-repeat: no-repeat;
+}
+
+.button__feedback {
+  @include flex();
+
+  transition: box-shadow $timeDelay $cubic, background-color $timeDelay $cubic;
+
+  width: 200px;
+  height: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+
+  background-color: $brandBlue;
+
+  border-color: transparent;
+  border-radius: 4px;
+
+  @include fonts($fw: bold, $fsz: 16px, $lh: 30px, $ls: 0.06em);
+  color: white;
+
+  &:hover,
+  &:focus {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    background-color: $blueButton;
+  }
+}
+
+.modal__icon {
+  position: absolute;
+  transition: fill $timeDelay $cubic;
+
+  left: 12px;
+  top: 5px;
+  transform: translateY(100%);
+
+  fill: $dark;
+}
+
+.modal__field:hover .modal__icon {
+  fill: $brandBlue;
+}

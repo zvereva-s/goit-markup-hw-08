@@ -1,0 +1,79 @@
+/* хэдэр */
+.header {
+  border-bottom: 1px solid #ececec;
+}
+.header__container {
+  @include flex($ai: null);
+}
+
+/* оформление меню хедера */
+.navmenu {
+  display: flex;
+}
+.navmenu__list {
+  margin-left: 90px;
+}
+.navmenu__point:not(:last-child) {
+  margin-right: 50px;
+}
+.navmenu__link {
+  position: relative;
+  display: block;
+  transition: color $timeDelay $cubic;
+
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  @include fonts($fw: 500, $lh: 16px, $ls: 0.02em);
+
+  color: $dark;
+}
+
+.header__list {
+  margin-left: auto;
+}
+.header__point {
+  @include fonts($fw: 500, $lh: 16px, $ls: 0.02em);
+  
+  &:not(:last-child) {
+  margin-right: 30px;
+}
+}
+
+.header__link:focus,
+.header__link:hover,
+.navmenu__link:focus,
+.navmenu__link:hover {
+  color: $brandBlue;
+}
+.header__icon {
+  margin-right: 10px;
+  fill: $txt-color;
+  transition: fill $timeDelay $cubic;
+
+  .header__link--icon:hover &,
+  .header__link--icon:focus & {
+  fill: $brandBlue;
+  }
+
+}
+
+.header__link--icon {
+  @include flex($jc: null);
+
+  transition: color $timeDelay $cubic;
+}
+.link--current {
+  color: $brandBlue;
+    &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    display: block;
+
+    width: 100%;
+    height: 4px;
+
+    background-color: $brandBlue;
+    border-radius: 2px;
+}

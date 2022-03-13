@@ -1,0 +1,97 @@
+/* общие стили */
+body {
+  font-family: $mainFont;
+  @include fonts();
+
+  color: $txt-color;
+
+  background-color: white;
+}
+
+//Сброс настроек//
+.link,
+.street,
+.logo,
+address {
+  text-decoration: none;
+  color: inherit;
+  font-family: $mainFont;
+  font-style: inherit;
+
+  margin: 0;
+  padding: 0;
+}
+.list {
+  @include flex($jc: null);
+
+  list-style: none;
+
+  padding: 0;
+  margin: 0;
+}
+
+.button,
+.link {
+  display: block;
+
+  cursor: pointer;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+ul,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  padding: 0;
+  margin: 0;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+//Общее оформление контейнера//
+.container {
+  width: 1200px;
+
+  margin: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+//Общее оформление секций//
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.point:not(:last-child) {
+  margin-right: 30px;
+}
+
+/* Главный заголовок секций */
+.title {
+  margin-bottom: 50px;
+
+  text-align: center;
+
+  @include fonts(null, bold, 36px, 40px, null);
+  color: $dark;
+}

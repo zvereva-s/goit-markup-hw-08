@@ -1,0 +1,141 @@
+/* футер  */
+.footer {
+  background-color: $darkGrey;
+
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.footer_container {
+  @include flex($ai: baseline, $jc: null);
+}
+
+.footer__contacts {
+  margin-top: 20px;
+}
+.contacts__list--point:not(:last-child) {
+  margin-bottom: 9px;
+}
+.footer___list {
+  display: block;
+
+  color: white;
+
+  transition: color $timeDelay $cubic;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer__link:hover,
+.footer__link:active,
+.footer__link:focus {
+  color: $brandBlue;
+}
+.footer__sl {
+  margin-left: 70px;
+}
+.footer__title {
+  @include fonts($fw: bold);
+
+  text-transform: uppercase;
+
+  color: white;
+}
+.footer__social-links {
+  @include flex();
+
+  margin-top: 20px;
+}
+.footer__point:not(:last-child) {
+  margin-right: 10px;
+}
+
+.footer__icon {
+  fill: white;
+}
+.footer__link--icon {
+  @include flex();
+
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+
+  background-color: rgba(255, 255, 255, 0.1);
+
+  transition: background-color $timeDelay $cubic;
+
+  &:hover,
+  &:focus {
+    background-color: $brandBlue;
+  }
+}
+
+.footer__submail {
+  margin-left: 93px;
+}
+.footer__form {
+  display: flex;
+
+  min-width: 570px;
+  margin-top: 20px;
+}
+
+.footer__input {
+  display: flex;
+
+  min-width: 350px;
+  height: 50px;
+
+  padding-left: 16px;
+  margin-right: 12px;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+
+  font-family: $mainFont;
+  @include fonts($fsz: 16px, $lh: 20px);
+
+  background: $darkGrey;
+  color: rgba(255, 255, 255, 0.6);
+
+    &::placeholder {
+    background: $darkGrey;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.footer__button {
+  @include flex();
+
+  width: 200px;
+  height: 50px;
+
+  background: $brandBlue;
+  border-radius: 4px;
+  border-color: transparent;
+
+  @include fonts($fw: bold, $fsz: 16px, $lh: 30px, $ls: 0.06em);
+
+  text-align: center;
+
+  color: white;
+
+  &::after {
+  content: "";
+
+  display: block;
+  transition: background-color $timeDelay $cubic;
+
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+
+  background-image: url("../images/send.svg");
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center;
+}
+
+  &:hover, &:focus {
+  background-color: $blueButton;
+}
+}

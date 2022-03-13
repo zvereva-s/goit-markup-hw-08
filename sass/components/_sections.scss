@@ -1,0 +1,163 @@
+/* секция Особенности  */
+
+/* заголовки  */
+.features .point {
+  width: 270px;
+}
+.features__icon--box {
+  @include flex();
+
+  margin-bottom: 30px;
+  min-height: 120px;
+
+  background-color: $foneColor;
+}
+.features__icon {
+  display: flex;
+}
+.features__title {
+  margin-bottom: 10px;
+
+  text-align: left;
+
+  @include fonts($fw: bold);
+
+  text-transform: uppercase;
+  color: $dark;
+}
+
+/* секция Чем мы занимаемся  */
+.wedoing__section {
+  padding-top: 0;
+}
+.wedoing__point {
+  position: relative;
+}
+.wedoing__thumb {
+  position: absolute;
+  bottom: 0;
+
+  width: 100%;
+  padding: 27px;
+  background: rgba(47, 48, 58, 0.8);
+}
+.wedoing__text-image {
+  @include fonts();
+
+  text-align: center;
+  text-transform: uppercase;
+
+  color: white;
+}
+/* секция Наша Команда  */
+
+.team__section {
+  background-color: $foneColor;
+}
+.team__point {
+  background-color: white;
+
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+.team__box {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.team__title--box {
+  text-align: center;
+
+  @include fonts($fw: 500, $fsz: 16px, $lh: 19px);
+
+  color: $dark;
+}
+.team__text {
+  margin-top: 10px;
+  text-align: center;
+
+  @include fonts($fsz: 16px, $lh: 19px);
+  color: $txt-color;
+}
+.team__box {
+  padding-left: 32px;
+  padding-right: 32px;
+}
+.team__list--sl {
+  margin-top: 16px;
+}
+.team__point--sl:not(:first-child) {
+  margin-left: 10px;
+}
+.team__icon-link {
+  @include flex();
+
+  transition: background-color $timeDelay $cubic;
+
+  width: 44px;
+  height: 44px;
+
+  border-radius: 50%;
+
+  &:hover,
+  &:focus {
+    background-color: $brandBlue;
+  }
+}
+
+.team__icon--sl {
+  fill: $lightGrey;
+
+  transition: fill $timeDelay $cubic;
+
+  &:focus,
+  &:hover {
+    fill: white;
+  }
+
+  .team__icon-link:hover &,
+  .team__icon-link:focus & {
+    fill: white;
+  }
+}
+
+/* <!-- Постоянные клиенты --> */
+
+.clients__list {
+  display: flex;
+  justify-content: space-around;
+
+  width: 1170px;
+  /* row-gap: 30px; */
+}
+.clients__point:not(:last-child) {
+  margin-right: 30px;
+}
+
+.clients__link {
+  @include flex();
+
+  transition: border-color $timeDelay $cubic;
+
+  height: 92px;
+  width: 170px;
+
+  border: 1px solid $lightGrey;
+  border-radius: 4px;
+
+  color: $lightGrey;
+
+  &:hover,
+  &:focus {
+    border-color: $brandBlue;
+  }
+}
+
+.clients__icon {
+  fill: $lightGrey;
+
+  .clients__link:hover &,
+  .clients__link:focus & {
+    fill: $brandBlue;
+  }
+}
