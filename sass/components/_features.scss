@@ -1,0 +1,15 @@
+.features__icon--box {
+  margin-bottom: 30px;
+}
+.features__title {
+  @include fonts($fw: 700, $lh: 16px);
+
+  margin-bottom: 10px;
+
+  text-transform: uppercase;
+  color: $dark;
+}
+.features__text {
+  @include fonts();
+  text-align: left;
+}

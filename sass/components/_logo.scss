@@ -1,0 +1,15 @@
+.logo {
+  font-family: $logoFont;
+  @include fonts($fw: 700, $fsz: 24px, $lh: 28px);
+
+  color: $brandBlue;
+}
+.logo__header--dark {
+  color: $dark;
+}
+.footer__logo {
+  margin-bottom: 20px;
+}
+.footer__logo--light {
+  color: white;
+}

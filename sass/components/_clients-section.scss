@@ -1,0 +1,14 @@
+.clients__list {
+  @include flex();
+  flex-wrap: wrap;
+
+  row-gap: 30px;
+  column-gap: 30px;
+}
+.clients__link {
+  display: block;
+  flex-basis: calc(100% - 30px / 2);
+
+  border: 1px solid $lightGrey;
+  border-radius: 4px;
+}

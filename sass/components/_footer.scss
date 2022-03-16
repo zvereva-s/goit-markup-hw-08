@@ -1,0 +1,38 @@
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  text-align: center;
+  background-color: $darkGrey;
+
+  color: white;
+}
+.contacts__list--point {
+  & :not(:last-child) {
+    margin-bottom: 8px;
+  }
+}
+.footer__sl {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+.footer__title {
+  @include fonts($fw: 700, $lh: 16px);
+
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.footer__social-links {
+  @include flex($ai: none);
+}
+.footer__point {
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+.footer__link--icon {
+  @include flex();
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 12px;
+}
