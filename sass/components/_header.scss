@@ -1,0 +1,42 @@
+.header {
+  position: relative;
+}
+.header__container {
+  padding: 15px 16px;
+}
+.navmenu {
+  @include flex($jc: space-between);
+}
+.menu__mobile {
+  display: none;
+
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+
+  background-color: white;
+  padding: 40px 48px;
+
+  font-size: 40px;
+
+  &.is-open {
+    display: block;
+  }
+}
+.menu__point:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.menu__link {
+  @include fonts($fw: 500, $fsz: 40px, $lh: 47px, $ls: 0.02em);
+
+  color: $dark;
+  &:hover,
+  &:focus {
+    color: $brandBlue;
+  }
+}
+.link--current {
+  color: $brandBlue;
+}

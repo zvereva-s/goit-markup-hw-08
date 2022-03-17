@@ -14,8 +14,38 @@
   padding: 10px 32px;
 
   background-color: $brandBlue;
-  color: white;
 
   font-family: $mainFont;
   @include fonts($fw: 700, $fsz: 16px, $lh: 30px, $ls: 0.06em);
+}
+.navmenu__button {
+  display: inline-flex;
+
+  margin: 0;
+  padding: 0;
+
+  border: none;
+  background-color: transparent;
+}
+.navmenu__icon--cross {
+  display: none;
+
+  .navmenu__button.is-open & {
+    display: block;
+  }
+
+  .navmenu__button:hover &,
+  .navmenu__button:focus & {
+    fill: $brandBlue;
+  }
+}
+
+.navmenu__icon--menu {
+  .navmenu__button.is-open & {
+    display: none;
+  }
+  .navmenu__button:hover &,
+  .navmenu__button:focus & {
+    fill: $brandBlue;
+  }
 }
