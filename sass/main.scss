@@ -1,9 +1,10 @@
 @import "./utils/variables";
-@import "./utils/mixins";
 @import "./utils/breakpoints";
+@import "./utils/mixins";
+@import "./components/common";
+
 @import "./utils/buttons";
 
-@import "./components/common";
 @import "./components/logo";
 @import "./components/header";
 @import "./components/container";

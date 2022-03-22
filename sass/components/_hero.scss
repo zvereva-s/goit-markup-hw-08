@@ -1,5 +1,53 @@
 .banner {
-  background-color: $darkGrey;
+  margin-left: auto;
+  margin-right: auto;
+
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-top: 118px;
+  padding-bottom: 118px;
+
+  height: 400px;
+  max-width: 1600px;
+
+  background-image: linear-gradient(
+    to right,
+    rgba(47, 48, 58, 0.4),
+    rgba(47, 48, 58, 0.4)
+  );
+  @media screen and (max-width: $mobile) {
+    background-image: url("../images/backgrounds/hero-mobile-1x.jpeg");
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url("../images/backgrounds/hero-mobile-2x.jpeg");
+    }
+  }
+
+  @media screen and (min-width: 481px) and (max-width: $tablet) {
+    background-image: url("../images/backgrounds/hero-tablet-1x.jpeg");
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url("../images/backgrounds/hero-tablet-2x.jpeg");
+    }
+  }
+  @media screen and (min-width: 769px) {
+    background-image: url("../images/backgrounds/hero-desktop-1x.jpeg");
+    height: 600px;
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url("../images/backgrounds/hero-desktop-2x.jpeg");
+    }
+  }
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 
   width: 100%;
   padding-top: 118px;
@@ -9,11 +57,8 @@
 .banner__title {
   @include fonts($fw: 900, $fsz: 26px, $lh: 42px, $ls: 0.06em);
 
-  padding-left: 60px;
-  padding-right: 60px;
-
-  text-transform: uppercase;
   text-align: center;
+  text-transform: uppercase;
 
   color: white;
 

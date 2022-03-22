@@ -29,8 +29,40 @@
   margin-top: 16px;
 }
 .team__point--sl {
-  padding: 12px;
   &:not(:last-child) {
     margin-right: 10px;
+  }
+}
+.team__icon-link {
+  @include flex();
+
+  padding: 12px;
+
+  transition: background-color $timeDelay $cubic;
+
+  width: 44px;
+  height: 44px;
+
+  border-radius: 50%;
+
+  &:hover,
+  &:focus {
+    background-color: $brandBlue;
+  }
+}
+
+.team__icon--sl {
+  fill: $lightGrey;
+
+  transition: fill $timeDelay $cubic;
+
+  &:focus,
+  &:hover {
+    fill: white;
+  }
+
+  .team__icon-link:hover &,
+  .team__icon-link:focus & {
+    fill: white;
   }
 }

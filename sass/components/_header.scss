@@ -1,5 +1,6 @@
 .header {
   position: relative;
+  border-bottom: 1px solid #ececec;
 }
 .header__container {
   padding: 15px 16px;
@@ -13,6 +14,7 @@
   position: absolute;
   top: 100%;
   left: 0;
+
   width: 100%;
 
   background-color: white;
@@ -24,10 +26,10 @@
     display: block;
   }
 }
+
 .menu__point:not(:last-child) {
   margin-bottom: 32px;
 }
-
 .menu__link {
   @include fonts($fw: 500, $fsz: 40px, $lh: 47px, $ls: 0.02em);
 
@@ -39,4 +41,65 @@
 }
 .link--current {
   color: $brandBlue;
+}
+.menu__list--contacts {
+  margin-top: 302px;
+}
+.menu__link--phone {
+  font-family: $mainFont;
+  @include fonts($fw: 500, $fsz: 34px, $lh: 40px, $ls: 0.02em);
+
+  color: $brandBlue;
+}
+.menu__link--email {
+  font-family: $mainFont;
+  @include fonts($fw: 500, $fsz: 24px, $lh: 28px, $ls: 0.02em);
+
+  color: $lightGrey;
+  &:hover,
+  &:focus {
+    color: $brandBlue;
+  }
+}
+.menu__list--sl {
+  display: flex;
+  margin-top: 64px;
+
+  width: 100%;
+
+  & .menu__point {
+    margin: 0;
+  }
+}
+.menu__link--sl {
+  display: block;
+
+  font-family: $mainFont;
+  @include fonts($fw: 500, $fsz: 18px, $lh: 22px, $ls: 0.02em);
+
+  color: $brandBlue;
+
+  &::after {
+    content: "";
+
+    width: 0px;
+    height: 22px;
+
+    margin-left: 10px;
+    margin-right: 10px;
+
+    border: 1px solid rgba(33, 33, 33, 0.2);
+
+    background-image: url("../image/menu-line.svg");
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center;
+  }
+}
+
+.header__list,
+.navmenu__list {
+  @media screen and (max-width: $tablet) {
+    display: none;
+  }
 }

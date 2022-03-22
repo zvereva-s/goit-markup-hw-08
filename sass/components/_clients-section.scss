@@ -6,9 +6,29 @@
   column-gap: 30px;
 }
 .clients__link {
-  display: block;
+  @include flex();
   flex-basis: calc(100% - 30px / 2);
 
   border: 1px solid $lightGrey;
   border-radius: 4px;
+  color: $lightGrey;
+
+  height: 92px;
+  width: 210px;
+
+  transition: border-color $timeDelay $cubic;
+
+  &:hover,
+  &:focus {
+    border-color: $brandBlue;
+  }
+}
+
+.clients__icon {
+  fill: $lightGrey;
+
+  .clients__link:hover &,
+  .clients__link:focus & {
+    fill: $brandBlue;
+  }
 }
