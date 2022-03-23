@@ -1,9 +1,14 @@
 .clients__list {
   @include flex();
-  flex-wrap: wrap;
+  @media screen and (max-width: 1199px) {
+    flex-wrap: wrap;
 
-  row-gap: 30px;
-  column-gap: 30px;
+    row-gap: 30px;
+    column-gap: 30px;
+  }
+}
+.clients__point:not(:last-child) {
+  margin-right: 30px;
 }
 .clients__link {
   @include flex();
@@ -14,7 +19,11 @@
   color: $lightGrey;
 
   height: 92px;
-  width: 210px;
+  @media screen and (max-width: 1199px) {
+    width: 210px;
+  }
+
+  width: 170px;
 
   transition: border-color $timeDelay $cubic;
 

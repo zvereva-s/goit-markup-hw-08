@@ -2,4 +2,35 @@
   @media screen and (max-width: 1199px) {
     display: none;
   }
+  padding-top: 0;
+}
+@media screen and (min-width: $desktop) {
+  .wedoing__list {
+    display: flex;
+  }
+  .wedoing__point {
+    position: relative;
+
+    width: 370px;
+  }
+  .wedoing__point:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  .wedoing__thumb {
+    position: absolute;
+    bottom: 0;
+
+    width: 100%;
+    padding: 27px;
+    background: rgba(47, 48, 58, 0.8);
+  }
+  .wedoing__text-image {
+    @include fonts();
+
+    text-align: center;
+    text-transform: uppercase;
+
+    color: white;
+  }
 }

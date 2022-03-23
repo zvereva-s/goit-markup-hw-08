@@ -4,7 +4,11 @@
 
   color: $brandBlue;
 }
-
+.logo__header {
+  @media screen and (min-width: $tablet) {
+    margin-right: 88px;
+  }
+}
 .logo__header--dark {
   color: $dark;
 }

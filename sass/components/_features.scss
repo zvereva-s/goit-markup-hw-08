@@ -1,6 +1,37 @@
+.features__list {
+  @media screen and (min-width: $tablet) {
+    display: flex;
+  }
+
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
+    flex-wrap: wrap;
+
+    row-gap: 30px;
+    column-gap: 30px;
+
+    flex-basis: calc(100% - 30px / 2);
+  }
+}
+.features__point {
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
+    width: 354px;
+  }
+  @media screen and (min-width: $desktop) {
+    width: 270px;
+
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+}
+
 .features__icon--box {
   margin-bottom: 30px;
+  padding: 25px;
+
+  background-color: $foneColor;
 }
+
 .features__title {
   @include fonts($fw: 700, $lh: 16px);
 
@@ -8,6 +39,10 @@
 
   text-transform: uppercase;
   color: $dark;
+
+  @media screen and (min-width: $tablet) {
+    text-align: left;
+  }
 }
 .features__text {
   @include fonts();
