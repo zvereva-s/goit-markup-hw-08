@@ -1,7 +1,9 @@
 // Мобильнео меню
 
 .mobile-menu__box {
-  display: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 
   position: fixed;
   top: 0;
@@ -11,26 +13,26 @@
   right: 0;
   z-index: 0;
 
-  transform: translateX(100%);
-  transition: translateX $timeDelay $cubic;
+  transform: translateY(-100%);
+  opacity: 0;
+  transition: transform $timeDelay $cubic $timeDelay,
+    opacity $timeDelay $cubic $timeDelay;
 
   width: 100%;
+  min-height: 80px;
 
-  padding-left: 40px;
-  padding-right: 80px;
-  padding-bottom: 48px;
-  padding-top: 48px;
+  padding-left: 8.4%;
+  padding-right: 17%;
+  padding-bottom: 10%;
+  padding-top: 10%;
 
   background-color: white;
 
   font-size: 40px;
 
   &.is-open {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-
-    transform: translateX(0);
+    transform: translateY(0);
+    opacity: 100%;
   }
 }
 .navmenu__button {
@@ -38,7 +40,15 @@
   top: 0;
   right: 2%;
   z-index: 1;
-
+  @media screen and (min-width: $mobile) and (max-width: 545px) {
+    right: 5%;
+  }
+  @media screen and (min-width: 546px) and (max-width: 650px) {
+    right: 8%;
+  }
+  @media screen and (min-width: 651px) and (max-width: 767px) {
+    right: 10%;
+  }
   @media screen and (min-width: $tablet) {
     display: none;
   }
@@ -46,6 +56,15 @@
     position: fixed;
     top: 0;
     right: 2%;
+    @media screen and (min-width: $mobile) and (max-width: 545px) {
+      right: 5%;
+    }
+    @media screen and (min-width: 546px) and (max-width: 650px) {
+      right: 8%;
+    }
+    @media screen and (min-width: 651px) and (max-width: 767px) {
+      right: 10%;
+    }
   }
 }
 
