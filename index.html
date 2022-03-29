@@ -14,43 +14,9 @@
     
     <!--хедер-->
     <header class="header">
-        <div class="header__container container">
+        <div class="header__container">
        <nav class="navmenu"> 
            <a class="logo logo__header" lang="en" href="index.html">Web<span class="logo__header--dark">Studio</span></a>
-           <button class="navmenu__button" 
-           type="button" aria-expanded="false" aria-controls="menu__mobile"
-           data-menu-button>
-               <svg width="40" height="40" aria-label="Переключатель мобильного меню">
-                <use class="navmenu__icon--menu" href="./images/sprite.svg#menu"></use>
-                <use class="navmenu__icon--cross" href="./images/sprite.svg#cross"></use>
-               </svg>
-           </button>
-           <div class="menu__mobile" id="menu__mobile" data-menu>
-                <ul class="menu__list list">
-                    <li class="menu__point">
-                        <a class="menu__link link link--current" href="index.html">Студия</a></li>
-                    <li class="menu__point">
-                        <a class="menu__link link" href="./portfolio.html">Портфолио</a></li>
-                    <li class="menu__point">
-                        <a class="menu__link link" href="">Контакты</a></li>
-                </ul>
-                <ul class="menu__list--contacts list">
-                    <li class="menu__point">
-                        <a class="menu__link--phone link" href="tel:+380961111111">+38 096 111 11 11</a></li>
-                    <li class="menu__point">
-                        <a class="menu__link--email link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                </ul>
-                <ul class="menu__list--sl list">
-                    <li class="menu__point">
-                        <a class="menu__link--sl link" href="https://www.instagram.com/" target="_blank" rel="noopener norefferal">Instagram</a>                </li>
-                    <li class="menu__point">
-                        <a class="menu__link--sl link" href="https://www.twitter.com/" target="_blank" rel="noopener norefferal">Twitter</a>                </li>
-                    <li class="menu__point">
-                        <a class="menu__link--sl link" href="https://www.facebook.com/" target="_blank" rel="noopener norefferal">Facebook</a>                </li>
-                    <li class="menu__point">
-                        <a class="menu__link--sl link" href="https://www.linkedin.com/" target="_blank" rel="noopener norefferal">LinkedIn</a>                </li>
-                </ul>
-           </div>
             <ul class="navmenu__list list">
             <li class="navmenu__point"><a class="navmenu__link link link--current" href="index.html">Студия</a></li>
             <li class="navmenu__point"><a class="navmenu__link link" href="./portfolio.html">Портфолио</a></li>
@@ -495,6 +461,57 @@
                 </div>
             </div>
         </div>
+
+    <!-- Мобильное меню  -->
+   <div class="navmenu__box">
+        <button class="navmenu__button" type="button" aria-expanded="false" aria-controls="menu__mobile" data-menu-button>
+            <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+                <use class="navmenu__icon--menu" href="./images/sprite.svg#menu"></use>
+                <use class="navmenu__icon--cross" href="./images/sprite.svg#cross"></use>
+            </svg>
+        </button>
+   </div>
+            <div class="mobile-menu__box" id="menu__mobile" data-menu>
+                <ul class="mobile-menu__list list">
+                    <li class="mobile-menu__point">
+                        <a class="mobile-menu__link link link--current" href="index.html">Студия</a>
+                    </li>
+                    <li class="mobile-menu__point">
+                        <a class="mobile-menu__link link" href="./portfolio.html">Портфолио</a>
+                    </li>
+                    <li class="mobile-menu__point">
+                        <a class="mobile-menu__link link" href="">Контакты</a>
+                    </li>
+                </ul>
+                <ul class="mobile-menu__list--contacts list">
+                    <li class="mobile-menu__point">
+                        <a class="mobile-menu__link--phone link" href="tel:+380961111111">+38 096 111 11 11</a>
+                    </li>
+                    <li class="mobile-menu__point">
+                        <a class="mobile-menu__link--email link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                    </li>
+                </ul>
+                <ul class="mobile-menu__list--sl list">
+                    <li class="mobile-menu__point  mobile-menu__point--sl">
+                        <a class="mobile-menu__link--sl link" href="https://www.instagram.com/" target="_blank"
+                            rel="noopener norefferal">Instagram</a>
+                    </li>
+                    <li class="mobile-menu__point mobile-menu__point--sl">
+                        <a class="mobile-menu__link--sl link" href="https://www.twitter.com/" target="_blank"
+                            rel="noopener norefferal">Twitter</a>
+                    </li>
+                    <li class="mobile-menu__point mobile-menu__point--sl">
+                        <a class="mobile-menu__link--sl link" href="https://www.facebook.com/" target="_blank"
+                            rel="noopener norefferal">Facebook</a>
+                    </li>
+                    <li class="mobile-menu__point mobile-menu__point--sl">
+                        <a class="mobile-menu__link--sl link" href="https://www.linkedin.com/" target="_blank"
+                            rel="noopener norefferal">LinkedIn</a>
+                    </li>
+                </ul>
+            </div>
+   
+    <!-- Скрипты -->
 <script src="./js/menu.js"></script>
 <script src="./js/modal.js"></script>
 

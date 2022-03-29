@@ -7,18 +7,21 @@
     column-gap: 30px;
   }
 }
+
 .clients__point:not(:last-child) {
-  margin-right: 30px;
+  @media screen and (min-width: $desktop) {
+    margin-right: 30px;
+  }
 }
 .clients__link {
   @include flex();
-  flex-basis: calc(100% - 30px / 2);
 
   border: 1px solid $lightGrey;
   border-radius: 4px;
   color: $lightGrey;
 
   height: 92px;
+
   @media screen and (max-width: 1199px) {
     width: 210px;
   }
@@ -34,7 +37,10 @@
 }
 
 .clients__icon {
+  display: block;
+
   fill: $lightGrey;
+  transition: fill $timeDelay $cubic;
 
   .clients__link:hover &,
   .clients__link:focus & {
