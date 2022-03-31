@@ -4,6 +4,7 @@
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 2;
 
   width: 100%;
   height: 100%;
@@ -20,6 +21,7 @@
 }
 .modal {
   position: relative;
+  z-index: 3;
 
   padding: 8px;
   background-color: white;
@@ -49,7 +51,7 @@
 .modal__icon--close {
   position: absolute;
   top: 30%;
-  right: 30%;
+  right: 31.3%;
 
   transition: fill $timeDelay $cubic;
 
@@ -90,6 +92,10 @@
   text-align: center;
 
   color: $dark;
+
+  @media screen and (max-width: 400px) {
+    @include fonts($fw: bold, $fsz: 1rem, $lh: 1.5rem);
+  }
 }
 .modal__label {
   @include fonts($fsz: 12px, $lh: 15px, $ls: 0.01em);
@@ -137,6 +143,10 @@
 
   margin-top: 20px;
 
+  @media screen and (max-width: 400px) {
+    @include fonts($fsz: 0.9em, $lh: 0.9em);
+  }
+
   @include fonts($fsz: 14px, $lh: 24px);
   color: $txt-color;
 
@@ -165,6 +175,10 @@
 
   border: 2px solid $dark;
   border-radius: 4px;
+
+  @media screen and (max-width: 400px) {
+    width: 25px;
+  }
 }
 
 .modal__check:checked + .modal__icon--check {
@@ -186,8 +200,15 @@
   transform: translateY(100%);
 
   fill: $dark;
-}
 
+  @media screen and (max-width: 400px) {
+    width: 10px;
+    height: auto;
+  }
+}
+.smartphone-icon {
+  left: 15px;
+}
 .modal__field:hover .modal__icon {
   fill: $brandBlue;
 }
