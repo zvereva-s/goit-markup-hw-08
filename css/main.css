@@ -200,7 +200,7 @@ body {
   position: fixed;
   top: 0;
   right: 2%;
-  animation: flip-2-hor-top-1 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: close-animation 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) forwards;
 }
 @media screen and (min-width: 480px) and (max-width: 545px) {
   .navmenu__button.is-open {
@@ -218,7 +218,7 @@ body {
   }
 }
 
-@-webkit-keyframes flip-2-hor-top-1 {
+@-webkit-keyframes close-animation {
   0% {
     -webkit-transform: translateY(0) rotateX(0);
     transform: translateY(0) rotateX(0);
@@ -232,11 +232,6 @@ body {
     transform-origin: 50% 100%;
   }
 }
-.flip-2-hor-top-1 {
-  -webkit-animation: flip-2-hor-top-1 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
-  animation: flip-2-hor-top-1 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
-}
-
 @-webkit-keyframes flip-2-hor-top-1 {
   0% {
     -webkit-transform: translateY(0) rotateX(0);

@@ -57,7 +57,7 @@
     top: 0;
     right: 2%;
 
-    animation: flip-2-hor-top-1 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: close-animation 0.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) forwards;
 
     @media screen and (min-width: $mobile) and (max-width: 545px) {
       right: 5%;
@@ -71,7 +71,7 @@
   }
 }
 
-@-webkit-keyframes flip-2-hor-top-1 {
+@-webkit-keyframes close-animation {
   0% {
     -webkit-transform: translateY(0) rotateX(0);
     transform: translateY(0) rotateX(0);
@@ -86,10 +86,7 @@
     transform-origin: 50% 100%;
   }
 }
-.flip-2-hor-top-1 {
-  -webkit-animation: flip-2-hor-top-1 0.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
-  animation: flip-2-hor-top-1 0.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
-}
+
 @-webkit-keyframes flip-2-hor-top-1 {
   0% {
     -webkit-transform: translateY(0) rotateX(0);
