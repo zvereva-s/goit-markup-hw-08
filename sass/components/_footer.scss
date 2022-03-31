@@ -5,18 +5,17 @@
   color: white;
 }
 .footer__container {
-  @media screen and (max-width: 1199.98px) {
+  
     padding: 60px 0;
-  }
 
   @media screen and (min-width: $desktop) {
     @include flex($ai: baseline, $jc: null);
 
-    padding: 60px 0;
+    padding: 60px 15px;
   }
 }
 .footer__container--tablet {
-  @media screen and (min-width: $tablet) and (max-width: 1999.98px) {
+  @media screen and (min-width: $tablet) and (max-width: 1199.98px) {
     @include flex($ai: baseline);
   }
 }
@@ -37,7 +36,7 @@
     margin-right: 165px;
   }
   @media screen and (min-width: $desktop) {
-    margin-right: 156px;
+    margin-right: 70px;
     text-align: left;
 
     width: 231px;
@@ -103,14 +102,14 @@
     margin-top: 60px;
   }
   @media screen and (min-width: $desktop) {
-    margin-left: 93px;
-
-    width: 570px;
+    margin-left: 90px;
   }
 }
 .footer__form {
   @media screen and (min-width: $desktop) {
     @include flex();
+    
+    min-width: 570px;
   }
 }
 .footer__input {
@@ -130,11 +129,12 @@
   @media screen and (min-width: $desktop) {
     display: flex;
 
-    width: 360px;
+    min-width: 350px;
     margin-right: 12px;
   }
 }
 .footer__button {
+
   &::after {
     content: "";
 
