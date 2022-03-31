@@ -19,10 +19,9 @@
     opacity $timeDelay $cubic $timeDelay;
 
   width: 100%;
-  min-height: 80px;
+  min-height: 100vw;
 
   padding-left: 8.4%;
-  padding-right: 17%;
   padding-bottom: 10%;
   padding-top: 10%;
 
@@ -76,6 +75,10 @@
   &:focus {
     color: $brandBlue;
   }
+
+  @media screen and (max-width: 400px) {
+    @include fonts($fsz: 2rem, $lh: 3rem);
+  }
 }
 
 .mobile-menu__link--phone {
@@ -83,6 +86,10 @@
   @include fonts($fw: 500, $fsz: 34px, $lh: 40px, $ls: 0.02em);
 
   color: $brandBlue;
+
+  @media screen and (max-width: 400px) {
+    @include fonts($fsz: 1.5rem, $lh: 2.5rem);
+  }
 }
 .mobile-menu__link--email {
   font-family: $mainFont;
@@ -93,9 +100,18 @@
   &:focus {
     color: $brandBlue;
   }
+  @media screen and (max-width: 400px) {
+    @include fonts($fsz: 1.5rem, $lh: 3rem);
+  }
 }
 .mobile-menu__list--sl {
   display: flex;
+
+  @media screen and (max-width: 400px) {
+    @include fonts($fsz: 1rem, $lh: 1rem);
+
+    flex-wrap: wrap;
+  }
 }
 .mobile-menu__point--sl {
   display: flex;
@@ -120,4 +136,8 @@
   @include fonts($fw: 500, $fsz: 18px, $lh: 22px, $ls: 0.02em);
 
   color: $brandBlue;
+
+  @media screen and (max-width: 400px) {
+    @include fonts($fsz: 1rem, $lh: 1.5rem);
+  }
 }
