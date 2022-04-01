@@ -61,7 +61,7 @@
   }
 }
 .portfolio__point {
-  min-height: 404px;
+  height: auto;
 
   @include mq(tablet) {
     display: flex;
@@ -149,6 +149,7 @@
 }
 
 .portfolio__caption {
+
   @include mq(tablet) {
     flex-grow: 1;
   }
