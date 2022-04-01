@@ -811,6 +811,9 @@ body {
   text-transform: uppercase;
   color: white;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  max-width: 360px;
+  margin-left: auto;
+  margin-right: auto;
 }
 @media screen and (min-width: 1200px) {
   .banner__title {
@@ -819,6 +822,7 @@ body {
     font-size: 44px;
     line-height: 1.3636363636;
     letter-spacing: 0.06em;
+    max-width: 696px;
   }
 }
 

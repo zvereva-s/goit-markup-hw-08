@@ -85,6 +85,7 @@
 }
 
 .banner__title {
+
   @include fonts($fw: 900, $fsz: 26px, $lh: 42px, $ls: 0.06em);
 
   text-align: center;
@@ -94,9 +95,18 @@
 
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
+  max-width: 360px;
+
+  margin-left:auto;
+  margin-right: auto;
+
+
+
   @media screen and (min-width: $desktop) {
     @include fonts(bold, 900, 44px, 60px, 0.06em);
+    max-width: 696px;
   }
+
 }
 .banner__button {
   color: white;
