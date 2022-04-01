@@ -26,12 +26,17 @@
   padding: 8px;
   background-color: white;
 
-  @media screen and (min-width: $tablet) {
-    width: 450px;
-    min-height: 609px;
+  margin-left: auto;
+  margin-right: auto;
 
-    margin-left: auto;
-    margin-right: auto;
+  width: 450px;
+  min-height: 609px;
+  
+  @media screen and (max-width:$mobile) {
+    width: 90vw;
+  }
+  @include mq(desktop) {
+    width: 528px;
   }
 }
 
@@ -150,7 +155,7 @@
   @include fonts($fsz: 14px, $lh: 24px);
   color: $txt-color;
 
-  @media screen and (min-width: $tablet) {
+  @include mq(tablet) {
     @include fonts($fw: 400, $fsz: 12px, $lh: 14px);
   }
 }

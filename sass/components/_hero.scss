@@ -13,7 +13,7 @@
   margin-left: auto;
   margin-right: auto;
 
-  @media screen and (max-width: 767px) {
+  @include mq(mobile-only) {
     background-image: linear-gradient(
         to right,
         rgba(47, 48, 58, 0.4),
@@ -21,9 +21,7 @@
       ),
       url("../images/backgrounds/hero-mobile-1x.jpeg");
 
-    @media screen and (min-device-pixel-ratio: 2),
-      screen and (min-resolution: 192dpi),
-      screen and (min-resolution: 2dppx) {
+    @include mq(retina) {
       background-image: linear-gradient(
           to right,
           rgba(47, 48, 58, 0.4),
@@ -33,7 +31,7 @@
     }
   }
 
-  @media screen and (min-width: $tablet) and (max-width: 1199px) {
+  @include mq(tablet-only) {
     background-image: linear-gradient(
         to right,
         rgba(47, 48, 58, 0.4),
@@ -44,9 +42,7 @@
     padding-left: 204px;
     padding-right: 204px;
 
-    @media screen and (min-device-pixel-ratio: 2),
-      screen and (min-resolution: 192dpi),
-      screen and (min-resolution: 2dppx) {
+    @include mq(retina){
       background-image: linear-gradient(
           to right,
           rgba(47, 48, 58, 0.4),
@@ -55,7 +51,7 @@
         url("../images/backgrounds/hero-tablet-2x.jpeg");
     }
   }
-  @media screen and (min-width: $desktop) {
+  @include mq(desktop) {
     background-image: linear-gradient(
         to right,
         rgba(47, 48, 58, 0.4),
@@ -68,9 +64,7 @@
     padding-top: 200px;
     padding-bottom: 280px;
 
-    @media screen and (min-device-pixel-ratio: 2),
-      screen and (min-resolution: 192dpi),
-      screen and (min-resolution: 2dppx) {
+    @include mq(retina) {
       background-image: url("../images/backgrounds/hero-desktop-2x.jpeg");
     }
   }
@@ -102,7 +96,7 @@
 
 
 
-  @media screen and (min-width: $desktop) {
+  @include mq(desktop) {
     @include fonts(bold, 900, 44px, 60px, 0.06em);
     max-width: 696px;
   }

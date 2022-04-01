@@ -1,9 +1,9 @@
 .features__list {
-  @media screen and (min-width: $tablet) {
+  @include mq(tablet) {
     display: flex;
   }
 
-  @media screen and (min-width: $tablet) and (max-width: 1199px) {
+  @include mq(tablet-only) {
     flex-wrap: wrap;
 
     row-gap: 30px;
@@ -13,10 +13,10 @@
   }
 }
 .features__point {
-  @media screen and (min-width: $tablet) and (max-width: 1199px) {
+  @include mq(tablet-only) {
     width: 354px;
   }
-  @media screen and (min-width: $desktop) {
+  @include mq(desktop) {
     width: 270px;
 
     &:not(:last-child) {
@@ -40,7 +40,7 @@
   text-transform: uppercase;
   color: $dark;
 
-  @media screen and (min-width: $tablet) {
+@include mq(tablet) {
     text-align: left;
   }
 }

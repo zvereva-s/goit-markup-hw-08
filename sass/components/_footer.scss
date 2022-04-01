@@ -8,19 +8,19 @@
   
     padding: 60px 0;
 
-  @media screen and (min-width: $desktop) {
+  @include mq(desktop) {
     @include flex($ai: baseline, $jc: null);
 
     padding: 60px 15px;
   }
 }
 .footer__container--tablet {
-  @media screen and (min-width: $tablet) and (max-width: 1199.98px) {
+  @include mq(tablet-only) {
     @include flex($ai: baseline);
   }
 }
 .footer__container--desktop {
-  @media screen and (min-width: $desktop) {
+  @include mq(desktop) {
     @include flex($ai: baseline);
   }
 }
@@ -28,14 +28,14 @@
   margin-top: 20px;
 }
 .footer__address {
-  @media screen and (max-width: 767.98px) {
+  @include mq(mobile-only) {
     margin-bottom: 60px;
   }
 
-  @media screen and (min-width: $tablet) and (max-width: 1199px) {
+  @include mq(tablet-only) {
     margin-right: 165px;
   }
-  @media screen and (min-width: $desktop) {
+  @include mq(desktop) {
     margin-right: 70px;
     text-align: left;
 
@@ -47,7 +47,7 @@
   & :not(:last-child) {
     margin-bottom: 8px;
 
-    @media screen and (min-width: $desktop) {
+    @include mq(desktop) {
       margin-bottom: 9px;
     }
   }
@@ -62,7 +62,7 @@
   text-transform: uppercase;
   margin-bottom: 20px;
 
-  @media screen and (min-width: $desktop) {
+  @include mq(desktop) {
     text-align: left;
   }
 }
@@ -90,23 +90,23 @@
   }
 }
 .footer__submail {
-  @media screen and (max-width: 767.98px) {
+  @include mq(mobile-only) {
     margin-top: 60px;
   }
 
-  @media screen and (min-width: $tablet) and (max-width: 1199.98px) {
+  @include mq(tablet-only) {
     width: 450px;
 
     margin-left: auto;
     margin-right: auto;
     margin-top: 60px;
   }
-  @media screen and (min-width: $desktop) {
+  @include mq(desktop) {
     margin-left: 90px;
   }
 }
 .footer__form {
-  @media screen and (min-width: $desktop) {
+  @include mq(desktop) {
     @include flex();
     
     min-width: 570px;
@@ -126,7 +126,7 @@
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
 
-  @media screen and (min-width: $desktop) {
+  @include mq(desktop) {
     display: flex;
 
     min-width: 350px;
@@ -150,7 +150,7 @@
     background-position: center;
   }
 
-  @media screen and (min-width: $desktop) {
+  @include mq(desktop) {
     margin-top: 0;
   }
 }

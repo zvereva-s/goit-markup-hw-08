@@ -2,11 +2,11 @@
   background-color: $foneColor;
 }
 .team__list {
-  @media screen and (min-width: $tablet) {
+  @include mq(tablet) {
     display: flex;
   }
 
-  @media screen and (min-width: $tablet) and (max-width: 1199px) {
+  @include mq(tablet-only) {
     flex-wrap: wrap;
 
     row-gap: 30px;
@@ -21,12 +21,12 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 
-  @media screen and (min-width: $tablet) and (max-width: 1199px) {
+  @include mq(tablet-only) {
     min-height: 536px;
     width: 354px;
   }
 
-  @media screen and (min-width: $desktop) {
+  @include mq(desktop) {
     width: 270px;
     min-height: 428px;
 

@@ -49,9 +49,12 @@
   @media screen and (min-width: 651px) and (max-width: 767px) {
     right: 10%;
   }
-  @media screen and (min-width: $tablet) {
+  
+  // @media screen and (min-width: $tablet) {
+    @include mq (tablet) {
     display: none;
   }
+  
   &.is-open {
     position: fixed;
     top: 0;

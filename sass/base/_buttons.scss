@@ -30,7 +30,7 @@
   }
 }
 .navmenu__button {
-  @media screen and (min-width: $tablet) {
+  @include mq(tablet) {
     display: none;
   }
 

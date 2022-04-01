@@ -5,13 +5,13 @@
 
   text-align: center;
 
-  @media screen and (min-width: $desktop) {
+  @include mq(desktop) {
     padding-top: 90px;
     padding-bottom: 90px;
   }
 }
 .point:not(:last-child) {
-  @media screen and (max-width: 767px) {
+  @include mq(mobile-only) {
     margin-bottom: 30px;
   }
 }
