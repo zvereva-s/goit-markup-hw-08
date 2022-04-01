@@ -218,7 +218,7 @@ body {
   }
 }
 
-@-webkit-keyframes close-animation {
+@keyframes close-animation {
   0% {
     -webkit-transform: translateY(0) rotateX(0);
     transform: translateY(0) rotateX(0);
@@ -232,7 +232,7 @@ body {
     transform-origin: 50% 100%;
   }
 }
-@-webkit-keyframes flip-2-hor-top-1 {
+@keyframes close-animation {
   0% {
     -webkit-transform: translateY(0) rotateX(0);
     transform: translateY(0) rotateX(0);
@@ -246,7 +246,7 @@ body {
     transform-origin: 50% 100%;
   }
 }
-@keyframes flip-2-hor-top-1 {
+@keyframes close-animation {
   0% {
     -webkit-transform: translateY(0) rotateX(0);
     transform: translateY(0) rotateX(0);
@@ -307,7 +307,6 @@ body {
   font-size: 24px;
   line-height: 1.1666666667;
   letter-spacing: 0.02em;
-  color: #afb1b8;
 }
 .mobile-menu__link--email:hover, .mobile-menu__link--email:focus {
   color: #2196f3;

@@ -71,7 +71,7 @@
   }
 }
 
-@-webkit-keyframes close-animation {
+@keyframes close-animation {
   0% {
     -webkit-transform: translateY(0) rotateX(0);
     transform: translateY(0) rotateX(0);
@@ -87,7 +87,7 @@
   }
 }
 
-@-webkit-keyframes flip-2-hor-top-1 {
+@keyframes close-animation {
   0% {
     -webkit-transform: translateY(0) rotateX(0);
     transform: translateY(0) rotateX(0);
@@ -103,7 +103,7 @@
   }
 }
 
-@keyframes flip-2-hor-top-1 {
+@keyframes close-animation {
   0% {
     -webkit-transform: translateY(0) rotateX(0);
     transform: translateY(0) rotateX(0);
@@ -146,7 +146,7 @@
   font-family: $mainFont;
   @include fonts($fw: 500, $fsz: 24px, $lh: 28px, $ls: 0.02em);
 
-  color: $lightGrey;
+  
   &:hover,
   &:focus {
     color: $brandBlue;
