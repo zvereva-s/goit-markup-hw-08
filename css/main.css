@@ -54,7 +54,7 @@ body {
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.7142857143;
+  line-height: 1.71;
   letter-spacing: 0.03em;
   color: #757575;
   background-color: white;
@@ -78,7 +78,7 @@ body {
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
-  line-height: 1.875;
+  line-height: 1.88;
   letter-spacing: 0.06em;
 }
 @media screen and (max-width: 400px) {
@@ -126,7 +126,7 @@ body {
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
-  line-height: 1.1666666667;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   color: #2196f3;
 }
@@ -265,7 +265,7 @@ body {
   font-style: normal;
   font-weight: 500;
   font-size: 40px;
-  line-height: 1.175;
+  line-height: 1.18;
   letter-spacing: 0.02em;
   color: #212121;
 }
@@ -287,7 +287,7 @@ body {
   font-style: normal;
   font-weight: 500;
   font-size: 34px;
-  line-height: 1.1764705882;
+  line-height: 1.18;
   letter-spacing: 0.02em;
   color: #2196f3;
 }
@@ -296,7 +296,7 @@ body {
     font-style: normal;
     font-weight: 400;
     font-size: 1.5rem;
-    line-height: 1.6666666667;
+    line-height: 1.67;
     letter-spacing: 0.03em;
   }
 }
@@ -306,7 +306,7 @@ body {
   font-style: normal;
   font-weight: 500;
   font-size: 24px;
-  line-height: 1.1666666667;
+  line-height: 1.17;
   letter-spacing: 0.02em;
 }
 .mobile-menu__link--email:hover, .mobile-menu__link--email:focus {
@@ -355,7 +355,7 @@ body {
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
-  line-height: 1.2222222222;
+  line-height: 1.22;
   letter-spacing: 0.02em;
   color: #2196f3;
 }
@@ -454,7 +454,7 @@ body {
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
-    line-height: 1.1428571429;
+    line-height: 1.14;
     letter-spacing: 0.02em;
     color: #212121;
   }
@@ -499,7 +499,7 @@ body {
     font-style: normal;
     font-weight: 500;
     font-size: 12px;
-    line-height: 1.1666666667;
+    line-height: 1.17;
     letter-spacing: 0.02em;
   }
 }
@@ -567,7 +567,7 @@ body {
   font-style: normal;
   font-weight: 700;
   font-size: 28px;
-  line-height: 1.1785714286;
+  line-height: 1.18;
   letter-spacing: 0.03em;
   margin-bottom: 30px;
   color: #212121;
@@ -645,7 +645,7 @@ body {
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
-  line-height: 1.1428571429;
+  line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-bottom: 20px;
@@ -803,7 +803,7 @@ body {
   font-style: normal;
   font-weight: 900;
   font-size: 26px;
-  line-height: 1.6153846154;
+  line-height: 1.62;
   letter-spacing: 0.06em;
   text-align: center;
   text-transform: uppercase;
@@ -818,7 +818,7 @@ body {
     font-style: bold;
     font-weight: 900;
     font-size: 44px;
-    line-height: 1.3636363636;
+    line-height: 1.36;
     letter-spacing: 0.06em;
     max-width: 696px;
   }
@@ -866,7 +866,7 @@ body {
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
-  line-height: 1.1428571429;
+  line-height: 1.14;
   letter-spacing: 0.03em;
   margin-bottom: 10px;
   text-transform: uppercase;
@@ -882,7 +882,7 @@ body {
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.7142857143;
+  line-height: 1.71;
   letter-spacing: 0.03em;
   text-align: left;
 }
@@ -922,7 +922,7 @@ body {
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
-    line-height: 1.7142857143;
+    line-height: 1.71;
     letter-spacing: 0.03em;
     text-align: center;
     text-transform: uppercase;
@@ -984,7 +984,7 @@ body {
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.1875;
+  line-height: 1.19;
   letter-spacing: 0.03em;
   color: #212121;
 }
@@ -1107,7 +1107,7 @@ body {
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.625;
+  line-height: 1.63;
   letter-spacing: 0.03em;
   color: #212121;
 }
@@ -1196,7 +1196,7 @@ body {
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
-  line-height: 1.5555555556;
+  line-height: 1.56;
   letter-spacing: 0.03em;
   color: white;
 }
@@ -1205,7 +1205,7 @@ body {
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
-    line-height: 1.7142857143;
+    line-height: 1.71;
     letter-spacing: 0.03em;
   }
 }
@@ -1224,7 +1224,7 @@ body {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  line-height: 1.875;
+  line-height: 1.88;
   letter-spacing: 0.03em;
   color: #757575;
 }
@@ -1366,7 +1366,7 @@ body {
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
-  line-height: 1.1666666667;
+  line-height: 1.17;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
   cursor: pointer;
@@ -1392,7 +1392,7 @@ body {
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.7142857143;
+  line-height: 1.71;
   letter-spacing: 0.03em;
   color: #757575;
 }
@@ -1410,7 +1410,7 @@ body {
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
-    line-height: 1.1666666667;
+    line-height: 1.17;
     letter-spacing: 0.03em;
   }
 }
