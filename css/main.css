@@ -54,7 +54,7 @@ body {
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.71;
+  line-height: 1.714;
   letter-spacing: 0.03em;
   color: #757575;
   background-color: white;
@@ -78,7 +78,7 @@ body {
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
-  line-height: 1.88;
+  line-height: 1.875;
   letter-spacing: 0.06em;
 }
 @media screen and (max-width: 400px) {
@@ -126,7 +126,7 @@ body {
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
-  line-height: 1.17;
+  line-height: 1.167;
   letter-spacing: 0.03em;
   color: #2196f3;
 }
@@ -265,7 +265,7 @@ body {
   font-style: normal;
   font-weight: 500;
   font-size: 40px;
-  line-height: 1.18;
+  line-height: 1.175;
   letter-spacing: 0.02em;
   color: #212121;
 }
@@ -287,7 +287,7 @@ body {
   font-style: normal;
   font-weight: 500;
   font-size: 34px;
-  line-height: 1.18;
+  line-height: 1.176;
   letter-spacing: 0.02em;
   color: #2196f3;
 }
@@ -296,7 +296,7 @@ body {
     font-style: normal;
     font-weight: 400;
     font-size: 1.5rem;
-    line-height: 1.67;
+    line-height: 1.667;
     letter-spacing: 0.03em;
   }
 }
@@ -306,7 +306,7 @@ body {
   font-style: normal;
   font-weight: 500;
   font-size: 24px;
-  line-height: 1.17;
+  line-height: 1.167;
   letter-spacing: 0.02em;
 }
 .mobile-menu__link--email:hover, .mobile-menu__link--email:focus {
@@ -355,7 +355,7 @@ body {
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
-  line-height: 1.22;
+  line-height: 1.222;
   letter-spacing: 0.02em;
   color: #2196f3;
 }
@@ -397,6 +397,11 @@ body {
   position: relative;
   border-bottom: 1px solid #ececec;
 }
+@media screen and (min-width: 768px) {
+  .header {
+    height: 80px;
+  }
+}
 
 .header__container {
   padding-top: 10px;
@@ -406,7 +411,6 @@ body {
   .header__container {
     display: flex;
     padding-top: 23px;
-    padding-bottom: 21px;
   }
 }
 
@@ -449,15 +453,25 @@ body {
 @media screen and (min-width: 768px) {
   .navmenu__link {
     position: relative;
-    padding-top: 30px;
-    padding-bottom: 30px;
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
-    line-height: 1.14;
+    line-height: 1.143;
     letter-spacing: 0.02em;
     color: #212121;
   }
+}
+@media screen and (min-width: 768px) and (min-width: 768px) and (max-width: 1199.98px) {
+  .navmenu__link {
+    padding-bottom: 29px;
+  }
+}
+@media screen and (min-width: 768px) and (min-width: 1200px) {
+  .navmenu__link {
+    padding-bottom: 34px;
+  }
+}
+@media screen and (min-width: 768px) {
   .navmenu__link:hover, .navmenu__link:focus {
     color: #2196f3;
   }
@@ -473,7 +487,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-left: auto;
   }
 }
 
@@ -499,7 +512,7 @@ body {
     font-style: normal;
     font-weight: 500;
     font-size: 12px;
-    line-height: 1.17;
+    line-height: 1.167;
     letter-spacing: 0.02em;
   }
 }
@@ -567,7 +580,7 @@ body {
   font-style: normal;
   font-weight: 700;
   font-size: 28px;
-  line-height: 1.18;
+  line-height: 1.179;
   letter-spacing: 0.03em;
   margin-bottom: 30px;
   color: #212121;
@@ -580,7 +593,8 @@ body {
 }
 
 .footer__container {
-  padding: 60px 0;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 @media screen and (min-width: 1200px) {
   .footer__container {
@@ -645,7 +659,7 @@ body {
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
-  line-height: 1.14;
+  line-height: 1.143;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-bottom: 20px;
@@ -795,7 +809,7 @@ body {
 }
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-moz-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-o-min-device-pixel-ratio: 2/1), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .banner {
-    background-image: url("../images/backgrounds/hero-desktop-2x.jpeg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/backgrounds/hero-desktop-2x.jpeg");
   }
 }
 
@@ -803,7 +817,7 @@ body {
   font-style: normal;
   font-weight: 900;
   font-size: 26px;
-  line-height: 1.62;
+  line-height: 1.615;
   letter-spacing: 0.06em;
   text-align: center;
   text-transform: uppercase;
@@ -818,7 +832,7 @@ body {
     font-style: bold;
     font-weight: 900;
     font-size: 44px;
-    line-height: 1.36;
+    line-height: 1.364;
     letter-spacing: 0.06em;
     max-width: 696px;
   }
@@ -866,7 +880,7 @@ body {
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
-  line-height: 1.14;
+  line-height: 1.143;
   letter-spacing: 0.03em;
   margin-bottom: 10px;
   text-transform: uppercase;
@@ -882,7 +896,7 @@ body {
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.71;
+  line-height: 1.714;
   letter-spacing: 0.03em;
   text-align: left;
 }
@@ -922,7 +936,7 @@ body {
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
-    line-height: 1.71;
+    line-height: 1.714;
     letter-spacing: 0.03em;
     text-align: center;
     text-transform: uppercase;
@@ -984,7 +998,7 @@ body {
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.19;
+  line-height: 1.188;
   letter-spacing: 0.03em;
   color: #212121;
 }
@@ -1107,7 +1121,7 @@ body {
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.63;
+  line-height: 1.625;
   letter-spacing: 0.03em;
   color: #212121;
 }
@@ -1196,7 +1210,7 @@ body {
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
-  line-height: 1.56;
+  line-height: 1.556;
   letter-spacing: 0.03em;
   color: white;
 }
@@ -1205,7 +1219,7 @@ body {
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
-    line-height: 1.71;
+    line-height: 1.714;
     letter-spacing: 0.03em;
   }
 }
@@ -1224,7 +1238,7 @@ body {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  line-height: 1.88;
+  line-height: 1.875;
   letter-spacing: 0.03em;
   color: #757575;
 }
@@ -1366,7 +1380,7 @@ body {
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
-  line-height: 1.17;
+  line-height: 1.167;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
   cursor: pointer;
@@ -1392,7 +1406,7 @@ body {
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.71;
+  line-height: 1.714;
   letter-spacing: 0.03em;
   color: #757575;
 }
@@ -1405,12 +1419,12 @@ body {
     letter-spacing: 0.03em;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
   .modal__label--policy {
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
-    line-height: 1.17;
+    line-height: 1.167;
     letter-spacing: 0.03em;
   }
 }

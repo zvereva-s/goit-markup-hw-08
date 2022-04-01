@@ -5,7 +5,7 @@
 @function setLineHeight($lh, $fsz) {
   $lh-value: $lh / $fsz;
 
-  @return decimal-round($lh-value, 2);
+  @return decimal-round($lh-value, 3);
 }
 
 

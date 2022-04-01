@@ -148,14 +148,13 @@
 
   margin-top: 20px;
 
-  @media screen and (max-width: 400px) {
-    @include fonts($fsz: 0.9em, $lh: 0.9em);
-  }
-
   @include fonts($fsz: 14px, $lh: 24px);
   color: $txt-color;
 
-  @include mq(tablet) {
+  @media screen and (max-width: 400px) {
+  @include fonts($fsz: 0.9em, $lh: 0.9em);
+}
+  @include mq(tablet-only) {
     @include fonts($fw: 400, $fsz: 12px, $lh: 14px);
   }
 }

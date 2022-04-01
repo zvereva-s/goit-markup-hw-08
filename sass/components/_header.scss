@@ -1,6 +1,11 @@
 .header {
   position: relative;
   border-bottom: 1px solid #ececec;
+
+  @include mq(tablet) {
+    height: 80px;
+  }
+ 
 }
 
 .header__container {
@@ -13,7 +18,7 @@
     display: flex;
 
     padding-top: 23px;
-    padding-bottom: 21px;
+    // padding-bottom: 21px;
   }
 }
 
@@ -50,17 +55,21 @@
   @include mq(tablet) {
     position: relative;
 
-    padding-top: 30px;
-    padding-bottom: 30px;
-
     @include fonts($fw: 500, $fsz: 14px, $lh: 16px, $ls: 0.02em);
 
     color: $dark;
 
+    @include mq(tablet-only){
+      padding-bottom: 29px;
+    }
+    @include mq(desktop) {
+      padding-bottom: 34px;
+    }
     &:hover,
     &:focus {
       color: $brandBlue;
     }
+
   }
 }
 
@@ -71,7 +80,7 @@
 
   @include mq(desktop) {
     @include flex();
-    margin-left: auto;
+   
   }
 }
 
